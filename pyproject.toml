@@ -1,0 +1,44 @@
+[tool.poetry]
+name = "app"
+version = "0.1.0"
+description = ""
+authors = ["Mikhail Zanka <misha@mowa.ai>", "Artur Kolishenko <artur.kolishenko@mowa.ai>", "Jacek Plocharczyk <jacek.plocharczyk@mowa.ai>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = ">=3.10,<3.13"
+langchain = "^0.0.297"
+streamlit = "^1.27.0"
+pydantic = "^2.4.1"
+pandas = "^2.1.1"
+loguru = "^0.7.2"
+sqlparse = "^0.4.4"
+streamlit-code-editor = "^0.1.10"
+jupyterlab = "^4.0.6"
+openai = "^0.28.1"
+
+[tool.poetry.group.dev.dependencies]
+black = "^23.3.0"
+flake8 = "^6.0.0"
+isort = "^5.12.0"
+pylint = "^2.17.4"
+jupyterlab = "^4.0.2"
+pre-commit = "^3.3.3"
+pytest = "^7.4.1"
+python-dotenv = "^1.0.0"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.isort]
+profile = "black"
+line_length = 120
+
+[tool.black]
+line-length = 120
+
+[tool.pylint.format]
+max-line-length = "120"
+disable = "C0116,C0111"
+extension-pkg-whitelist="pydantic"

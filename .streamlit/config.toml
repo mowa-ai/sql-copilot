@@ -1,0 +1,13 @@
+[browser]
+gatherUsageStats = false
+
+[server]
+port = 8080
+address = "0.0.0.0"
+
+[theme]
+primaryColor="#F63366"
+backgroundColor="#272C37"
+secondaryBackgroundColor="#1B1C26"
+textColor="#FFFFFF"
+font="sans serif"
